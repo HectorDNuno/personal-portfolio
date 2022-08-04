@@ -2,7 +2,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import gitHubLogo from "../assests/img/github-brands.svg";
 import linkedInLogo from "../assests/img/linkedin-brands.svg";
-import astronautLogo from "../assests/img/user-astronaut-solid.svg";
+import logo from "../assests/img/user-astronaut-solid.svg";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -30,7 +30,7 @@ export const NavBar = () => {
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-          <img src={astronautLogo} alt="logo" />
+          <img src={logo} alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
