@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
 import bannerImg from "../assests/img/satellite-solid.svg";
 
 export const Banner = () => {
