@@ -54,11 +54,19 @@ export const NavBar = () => {
             </Nav.Link>
 
             <Nav.Link
-              href="#projects"
-              className={activeLink === "projects" ? "active navbar-link" : "navbar-link"}
-              onClick={() => onUpdateActiveLink("projects")}
+              href="#project"
+              className={activeLink === "project" ? "active navbar-link" : "navbar-link"}
+              onClick={() => onUpdateActiveLink("project")}
             >
               Projects
+            </Nav.Link>
+
+            <Nav.Link
+              href="#contact"
+              className={activeLink === "contact" ? "active navbar-link" : "navbar-link"}
+              onClick={() => onUpdateActiveLink("contact")}
+            >
+              Contact
             </Nav.Link>
           </Nav>
 
@@ -71,9 +79,9 @@ export const NavBar = () => {
                 <img src={gitHubLogo} alt="GitHub logo" />
               </a>
             </div>
-            <button className="vvd" onClick={() => console.log("connect")}>
+            {/* <button className="vvd" onClick={() => console.log("connect")}>
               <span>Let's Connect</span>
-            </button>
+            </button> */}
           </span>
         </Navbar.Collapse>
       </Container>
