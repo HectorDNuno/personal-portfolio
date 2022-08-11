@@ -305,6 +305,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /* Project css */
+
+a {
+  color: white !important ;
+}
+
 .project {
   padding: 80px 0;
   position: relative;
