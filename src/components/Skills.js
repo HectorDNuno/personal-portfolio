@@ -1,10 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import reactLogo from "../assests/img/react-brands.svg";
-import rubyLogo from "../assests/img/gem-solid.svg";
-import laptopLogo from "../assests/img/laptop-code-solid.svg";
-import cssLogo from "../assests/img/css3-alt-brands.svg";
+import robot from "../assests/img/robot-solid.svg";
 
 export const Skills = () => {
   const responsive = {
@@ -32,11 +29,15 @@ export const Skills = () => {
         <Row>
           <Col>
             <div className="skill-box">
-              <h2>Skills</h2>
+              <h2>
+                Skills{" "}
+                <span>
+                  <img className="skills-image" src={robot} alt="rocket" />
+                </span>
+              </h2>
               <p>Description</p>
               <Carousel responsive={responsive} infinite={true} className="skill-slider">
                 <div className="item">
-                  {/* <img src={laptopLogo} alt="" /> */}
                   <h5>Web Development</h5>
                 </div>
 
@@ -49,7 +50,6 @@ export const Skills = () => {
                 </div>
 
                 <div className="item">
-                  {/* <img src={reactLogo} alt="" /> */}
                   <h5>React.js</h5>
                 </div>
 
@@ -58,7 +58,6 @@ export const Skills = () => {
                 </div>
 
                 <div className="item">
-                  {/* <img src={rubyLogo} alt="" /> */}
                   <h5>Ruby</h5>
                 </div>
 
@@ -67,7 +66,6 @@ export const Skills = () => {
                 </div>
 
                 <div className="item">
-                  {/* <img src={cssLogo} alt="" /> */}
                   <h5>CSS</h5>
                 </div>
               </Carousel>
