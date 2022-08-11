@@ -23,6 +23,8 @@ export const Skills = () => {
     },
   };
 
+  const description = "Here you'll find a few of the engineering skills I've learned";
+
   return (
     <section className="skill" id="skills">
       <Container>
@@ -35,7 +37,7 @@ export const Skills = () => {
                   <img className="skills-image" src={robot} alt="rocket" />
                 </span>
               </h2>
-              <p>Description</p>
+              <p> {description} </p>
               <Carousel responsive={responsive} infinite={true} className="skill-slider">
                 <div className="item">
                   <h5>Web Development</h5>
