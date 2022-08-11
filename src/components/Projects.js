@@ -1,4 +1,4 @@
-import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
+import { Col, Container, Row, Tab } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import nozama from "../assests/img/nozama_screenshot.png";
 import typeCheckr from "../assests/img/type-checkr-screenshot.png";
