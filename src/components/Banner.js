@@ -8,7 +8,7 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 10);
-  const toRotate = ["Software Engineer", "Web Developer", "UI/UX Designer"];
+  const toRotate = ["Software Engineer", "Web Developer", "Front-End Engineer"];
   const period = 2000;
 
   const tick = () => {
@@ -61,7 +61,7 @@ export const Banner = () => {
           </Col>
 
           <Col xs={12} md={6} xl={5}>
-            <img src={bannerImg} alt="banner img" />
+            {/* <img src={bannerImg} alt="banner img" /> */}
           </Col>
         </Row>
       </Container>
