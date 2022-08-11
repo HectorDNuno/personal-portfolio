@@ -193,11 +193,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assests/img/aldebaran-s-DVx82a79X74-unsplash.jpeg');
+  background-image: url('./assests/img/felix-mittermeier-ihbqhutI9x4-unsplash.jpeg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -216,7 +217,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #B8B8B8;
+  color: #ffffff;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -270,7 +271,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .skill-box {
-  background: #555555;
+  background: #100C07;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
@@ -304,6 +305,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+.skills-image {
+  width: 4%;
+  margin-bottom: 12px;
+}
+
 /* Project css */
 
 a {
@@ -313,8 +319,13 @@ a {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: black;
+  background-color: #3E3B39;
 }
+
+.project-image {
+  width: 3%;
+}
+
 .project h2 {
 	font-size: 45px;
 	font-weight: 700;
@@ -391,7 +402,7 @@ a {
 }
 .proj-imgbx::before {
   content: "";
-  background: #666 ;
+  background: #3E3B39 ;
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -439,12 +450,55 @@ a {
 /* Contact CSS */
 
 .contact {
-  background: #000000;
+  background: #6D6A6A;
   padding: 60px 0 200px 0;
 }
 .contact img {
-  width: 92%;
+  width: 65%;
+  margin-left: 80px;
 }
+
+.contact img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
 .contact h2 {
 	font-size: 45px;
 	font-weight: 700;
@@ -519,7 +573,7 @@ a {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat; */
-  background: #666;
+  background: #9B9A9C;
 }
 
 .footer img {
