@@ -11,17 +11,20 @@ export const Projects = () => {
       title: "Type Checkr",
       description: "A reference for users who play the video game Pokémon",
       imgUrl: typeCheckr,
+      siteUrl: "https://pokemon-types-app.netlify.app/",
     },
     {
       title: "Nozama",
       description: "An Amazon clone that lets users create logins, add items to their cart, and process payments",
       imgUrl: nozama,
+      siteUrl: "https://clone-a8546.web.app/",
     },
     {
       title: "Weather App",
       description:
         "A simple weather app where a user can look up a city and see it's detailed weather information and a weekly weather report",
       imgUrl: weatherApp,
+      siteUrl: null,
     },
   ];
   return (
