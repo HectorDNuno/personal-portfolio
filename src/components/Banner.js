@@ -8,8 +8,10 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 10);
-  const toRotate = ["Software Engineer", "Web Developer", "Front-End Engineer"];
+  const toRotate = ["Software Engineer", "Sci-Fi Enthusiast", "Gamer"];
   const period = 2000;
+  const aboutMe =
+    "I am a Software Engineer with expereince in Ruby and JavaScript frameworks. I consider myself a 'forver-student', and I'm eager to build on my coding foundations and stay in tune with the latest engineering practices and strategies. I'll also play some video games along the way!";
 
   const tick = () => {
     let i = loopNumber % toRotate.length;
@@ -54,14 +56,14 @@ export const Banner = () => {
                 <span className="wrap">{text}</span>
               </div>
             </h1>
-            <p>About myself</p>
-            <button onClick={() => console.log("connect")}>
+            <p> {aboutMe} </p>
+            {/* <button onClick={() => console.log("connect")}>
               Let's Connect <ArrowRightCircle size={25} />
-            </button>
+            </button> */}
           </Col>
 
           <Col xs={12} md={6} xl={5}>
-            {/* <img src={bannerImg} alt="banner img" /> */}
+            <img className="bannerImg" src={bannerImg} alt="banner img" />
           </Col>
         </Row>
       </Container>
