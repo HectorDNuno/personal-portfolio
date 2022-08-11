@@ -22,7 +22,7 @@ export const Projects = () => {
       siteUrl: "https://clone-a8546.web.app/",
     },
     {
-      title: "Weather App",
+      title: "What Weather",
       description:
         "A simple weather app where a user can look up a city and see it's detailed weather information and a weekly weather report. Utilizes GeoDB Cities API, OpenWeather API, and React.js.",
       imgUrl: weatherApp,
