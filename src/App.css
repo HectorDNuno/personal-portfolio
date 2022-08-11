@@ -552,7 +552,7 @@ a {
 }
 .contact form button::before {
   content: "";
-  background: #666;
+  background: black;
   width: 0;
   height: 100%;
   position: absolute;
