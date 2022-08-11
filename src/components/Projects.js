@@ -3,6 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 import nozama from "../assests/img/nozama_screenshot.png";
 import typeCheckr from "../assests/img/type-checkr-screenshot.png";
 import weatherApp from "../assests/img/weather-app-screenshot.png";
+import background from "../assests/img/spacex-uj3hvdfQujI-unsplash.jpeg";
 
 export const Projects = () => {
   const projects = [
@@ -61,7 +62,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src="" alt="" />
+      {/* <img className="background-image-right" src={background} alt="" /> */}
     </section>
   );
 };
