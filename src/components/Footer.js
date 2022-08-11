@@ -12,12 +12,12 @@ export const Footer = () => {
             <img src={logo} alt="" />
             <span>Thank you for stopping by!</span>
             <div className="social-icon">
-              <a href="">
-                <img src={linkedInLogo} alt="" />
+              <a href="https://www.linkedin.com/in/hectornuno/" target="_blank" rel="noopener noreferrer">
+                <img src={linkedInLogo} alt="LinkedIn logo" />
               </a>
 
-              <a href="">
-                <img src={gitHubLogo} alt="" />
+              <a href="https://github.com/HectorDNuno" target="_blank" rel="noopener noreferrer">
+                <img src={gitHubLogo} alt="GitHub logo" />
               </a>
             </div>
           </Col>
