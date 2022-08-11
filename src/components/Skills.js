@@ -36,22 +36,38 @@ export const Skills = () => {
               <p>Description</p>
               <Carousel responsive={responsive} infinite={true} className="skill-slider">
                 <div className="item">
-                  <img src={laptopLogo} alt="" />
+                  {/* <img src={laptopLogo} alt="" /> */}
                   <h5>Web Development</h5>
                 </div>
 
                 <div className="item">
-                  <img src={reactLogo} alt="" />
-                  <h5>React</h5>
+                  <h5>HTML</h5>
                 </div>
 
                 <div className="item">
-                  <img src={rubyLogo} alt="" />
+                  <h5>JavaScript</h5>
+                </div>
+
+                <div className="item">
+                  {/* <img src={reactLogo} alt="" /> */}
+                  <h5>React.js</h5>
+                </div>
+
+                <div className="item">
+                  <h5>Vue.js</h5>
+                </div>
+
+                <div className="item">
+                  {/* <img src={rubyLogo} alt="" /> */}
                   <h5>Ruby</h5>
                 </div>
 
                 <div className="item">
-                  <img src={cssLogo} alt="" />
+                  <h5>Ruby on Rails</h5>
+                </div>
+
+                <div className="item">
+                  {/* <img src={cssLogo} alt="" /> */}
                   <h5>CSS</h5>
                 </div>
               </Carousel>
