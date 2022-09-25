@@ -12,7 +12,7 @@ export const Projects = () => {
       description:
         "A reference for users who play the video game Pokémon. Built using Ruby on Rails, Vue.js, and the PokéAPI.",
       imgUrl: typeCheckr,
-      siteUrl: "https://pokemon-types-app.netlify.app/",
+      siteUrl: "https://type-checkr.netlify.app/",
     },
     {
       title: "Nozama",
@@ -43,20 +43,6 @@ export const Projects = () => {
 
             <p>My most recent projects!</p>
             <Tab.Container id="project-tabs" defaultActiveKey="first">
-              {/* <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                <Nav.Item>
-                  <Nav.Link eventKey="first">Deployed Projects</Nav.Link>
-                </Nav.Item>
-
-                <Nav.Item>
-                  <Nav.Link eventKey="second">In the Works</Nav.Link>
-                </Nav.Item>
-
-                <Nav.Item>
-                  <Nav.Link eventKey="third">Future Endeavors</Nav.Link>
-                </Nav.Item>
-              </Nav> */}
-
               <Tab.Content>
                 <Tab.Pane eventKey="first">
                   <Row>
