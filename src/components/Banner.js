@@ -56,9 +56,6 @@ export const Banner = () => {
               </div>
             </h1>
             <p> {aboutMe} </p>
-            {/* <button onClick={() => console.log("connect")}>
-              Let's Connect <ArrowRightCircle size={25} />
-            </button> */}
           </Col>
 
           <Col xs={12} md={6} xl={5}>
