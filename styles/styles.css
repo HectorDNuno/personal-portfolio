@@ -78,16 +78,7 @@ section {
 
 .active {
   display: block;
-  -webkit-animation: scalAnim 1s ease-in-out;
-          animation: scalAnim 1s ease-in-out;
-}
-@-webkit-keyframes scaleAnim {
-  0% {
-    transform: translateY(-100%) scaleY(0);
-  }
-  100% {
-    transform: translateY(0) scaleY(1);
-  }
+  animation: scalAnim 1s ease-in-out;
 }
 @keyframes scaleAnim {
   0% {
@@ -422,8 +413,8 @@ section {
   position: relative;
 }
 .portfolios .portfolio-item img {
-  width: 100%;
-  height: 300px;
+  max-width: 300px;
+  max-height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px;
@@ -567,9 +558,6 @@ section {
   resize: none;
 }
 .contact-content-container .right-contact .input-control ::-moz-placeholder {
-  color: var(--color-white);
-}
-.contact-content-container .right-contact .input-control :-ms-input-placeholder {
   color: var(--color-white);
 }
 .contact-content-container .right-contact .input-control ::placeholder {
