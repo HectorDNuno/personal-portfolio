@@ -19,8 +19,23 @@
   }
 
   .portfolios {
-    grid-template-columns: 1fr;
-    padding-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  .left-contact-title {
+    text-align: center;
   }
 
   .portfolio-text {
