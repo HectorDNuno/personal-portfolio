@@ -86,14 +86,6 @@ a {
        column-gap: 2rem;
 }
 
-@keyframes rotate {
-  0% {
-    transform: translate3d(-50%, -50%, 0) rotateY(0deg);
-  }
-  to {
-    transform: translate3d(-50%, -50%, 0) rotateY(1turn);
-  }
-}
 header {
   align-items: center;
   font-size: 1.2rem;
@@ -141,10 +133,10 @@ header .header-right {
   justify-content: space-between;
 }
 .section-portfolio .accordion .accordion-option .accordion-header .portfolio-item-title {
+  min-width: 13%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
 }
 .section-portfolio .accordion .accordion-option .accordion-header .icons {
   display: flex;
@@ -253,4 +245,7 @@ header .header-right {
 }
 .section-contact .contact .contact-content .contact-item i {
   --fa-rotate-angle: 45deg;
+}
+.section-contact .contact .contact-content .contact-item:hover i {
+  --fa-rotate-angle: 90deg;
 }/*# sourceMappingURL=styles.css.map */

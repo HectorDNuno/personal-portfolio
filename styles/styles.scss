@@ -84,17 +84,6 @@ a {
   column-gap: 2rem;
 }
 
-//animation
-@keyframes rotate {
-  0% {
-      transform: translate3d(-50%,-50%,0) rotateY(0deg)
-  }
-
-  to {
-      transform: translate3d(-50%,-50%,0) rotateY(1turn)
-  }
-}
-
 //header
 header {
   align-items: center;
@@ -146,9 +135,10 @@ header {
         display: flex;
         justify-content: space-between;
         .portfolio-item-title {
+          min-width: 13%;
           display: flex;
+          justify-content: space-between;
           align-items: center;
-          column-gap: .5rem;
         }
         .icons {
           display: flex;
@@ -269,6 +259,13 @@ header {
         i {
         --fa-rotate-angle: 45deg;
         }
+      }
+
+      .contact-item:hover {
+        i {
+        --fa-rotate-angle: 90deg;
+        }
+
       }
     }
   }
