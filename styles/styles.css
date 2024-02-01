@@ -54,10 +54,16 @@ a {
   color: var(--color-white);
 }
 
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
 .container {
-  margin: 0 auto;
-  padding-left: 4.5rem;
-  padding-right: 4.5rem;
+  padding: 0 4.5rem;
+  --fa-rotate-angle: 45deg;
 }
 
 .main-grid {
@@ -86,21 +92,26 @@ a {
        column-gap: 2rem;
 }
 
-header {
+.list-item {
+  display: flex;
   align-items: center;
-  font-size: 1.2rem;
-  text-align: center;
-  padding-top: 2.8rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  margin-bottom: 0.5rem;
 }
-header .header-center {
-  grid-column: 6/span 2;
-  color: var(--color-secondary);
-  letter-spacing: -0.35rem;
-}
-header .header-right {
-  grid-column: 10/span 3;
+
+.header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  padding-top: 2.8rem;
+}
+.header .header-center {
+  color: var(--color-secondary);
+}
+.header .header-right .header-right-link:hover {
+  color: var(--color-secondary);
 }
 
 .hero {
@@ -116,68 +127,72 @@ header .header-right {
   grid-column: 1/span 4;
 }
 
-.section-portfolio {
+.section-projects {
   margin-top: 13rem;
 }
-.section-portfolio .accordion {
+.section-projects .accordion {
   margin: 0 auto;
 }
-.section-portfolio .accordion .accordion-option {
+.section-projects .accordion .accordion-option {
   margin-top: 2rem;
   padding-bottom: 1rem;
   border-bottom: 2px solid #fff;
   cursor: pointer;
 }
-.section-portfolio .accordion .accordion-option .accordion-header {
+.section-projects .accordion .accordion-option .accordion-header {
   display: flex;
   justify-content: space-between;
 }
-.section-portfolio .accordion .accordion-option .accordion-header .portfolio-item-title {
+.section-projects .accordion .accordion-option .accordion-header .accordion-title {
   min-width: 13%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.section-portfolio .accordion .accordion-option .accordion-header .icons {
+.section-projects .accordion .accordion-option .accordion-header .accordion-icons {
   display: flex;
   justify-content: space-between;
   align-items: center;
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
 }
-.section-portfolio .accordion .accordion-option .accordion-header .icons .icon {
+.section-projects .accordion .accordion-option .accordion-header .accordion-icons a {
   min-width: 2rem;
   text-align: center;
 }
-.section-portfolio .accordion .accordion-option .accordion-header .icons .icon:hover {
+.section-projects .accordion .accordion-option .accordion-header .accordion-icons a:hover {
   color: var(--color-secondary);
 }
-.section-portfolio .accordion .accordion-option .accordion-content {
+.section-projects .accordion .accordion-option .accordion-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
   padding: 0 2rem;
 }
-.section-portfolio .accordion .accordion-option .accordion-content .portfolio-item-description {
-  padding-top: 2rem;
-  margin-bottom: 2rem;
+.section-projects .accordion .accordion-option .accordion-content .accordion-content-description {
+  margin: 2rem 0;
 }
-.section-portfolio .accordion .accordion-option .accordion-content .portfolio-item-thumbnail {
+.section-projects .accordion .accordion-option .accordion-content .accordion-content-group {
+  display: flex;
+  -moz-column-gap: 10rem;
+       column-gap: 10rem;
+}
+.section-projects .accordion .accordion-option .accordion-content .accordion-content-thumbnail {
   -o-object-fit: cover;
      object-fit: cover;
   width: 600px;
   height: 600px;
 }
-.section-portfolio .accordion .accordion-option .accordion-content .portfolio-item-thumbnail-long {
+.section-projects .accordion .accordion-option .accordion-content .accordion-content-thumbnail-long {
   -o-object-fit: cover;
      object-fit: cover;
   width: 200px;
   height: 500px;
 }
-.section-portfolio .accordion .accordion-option.active .accordion-content {
+.section-projects .accordion .accordion-option.active .accordion-content {
   max-height: 550px;
 }
-.section-portfolio .accordion .accordion-option.active .fa-angle-down {
+.section-projects .accordion .accordion-option.active .fa-angle-down {
   transform: rotate(180deg);
 }
 
@@ -188,30 +203,27 @@ header .header-right {
   grid-column: 1/span 5;
   order: 0;
 }
-.section-about .about-left-side .about-left-side-section {
-  margin-bottom: 3rem;
+.section-about .about-left-side .skills-list {
+  margin-bottom: 5rem;
 }
-.section-about .about-left-side .skills .skill {
-  display: flex;
-  align-items: center;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
-  margin-bottom: 0.5rem;
-  --fa-rotate-angle: 45deg;
+.section-about .about-left-side .timeline {
+  margin-bottom: 5rem;
 }
 .section-about .about-left-side .timeline-item {
   margin-bottom: 1.5rem;
 }
-.section-about .about-left-side .timeline-item .timeline-item-title {
-  display: flex;
-  align-items: center;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
-  --fa-rotate-angle: 45deg;
-}
 .section-about .about-left-side .timeline-item p {
   margin-top: 0.5rem;
   margin-left: 1.5rem;
+}
+.section-about .about-left-side .my-photo {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 300px;
+  height: 300px;
+}
+.section-about .about-left-side .my-photo img {
+  border-radius: 100%;
 }
 .section-about .about-right-side {
   grid-column: 7/span 5;
@@ -223,29 +235,16 @@ header .header-right {
 }
 
 .section-contact {
-  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
-.section-contact .contact {
-  margin-bottom: 13rem;
-}
-.section-contact .contact .contact-content {
+.section-contact .contact-content {
   grid-column: 7/span 5;
 }
-.section-contact .contact .contact-content p {
+.section-contact .contact-content p {
   margin-bottom: 1rem;
   font-size: 1.5rem;
   line-height: 2.5rem;
 }
-.section-contact .contact .contact-content .contact-item {
-  display: flex;
-  align-items: center;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
-  margin-bottom: 1rem;
-}
-.section-contact .contact .contact-content .contact-item i {
-  --fa-rotate-angle: 45deg;
-}
-.section-contact .contact .contact-content .contact-item:hover i {
+.section-contact .contact-content .list-item:hover i {
   --fa-rotate-angle: 90deg;
 }/*# sourceMappingURL=styles.css.map */

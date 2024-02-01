@@ -54,11 +54,17 @@ a {
   color: var(--color-white);
 }
 
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
 //utility classes
 .container {
-  margin: 0 auto;
-  padding-left: 4.5rem;
-  padding-right: 4.5rem;
+  padding: 0 4.5rem;
+  --fa-rotate-angle: 45deg;
 }
 
 .main-grid {
@@ -84,24 +90,29 @@ a {
   column-gap: 2rem;
 }
 
-//header
-header {
+.list-item {
+  display: flex;
   align-items: center;
-  font-size: 1.2rem;
-  text-align: center;
-  padding-top: 2.8rem;
-  .header-left {
+  column-gap: 1rem;
+  margin-bottom: .5rem;
+}
 
-  }
+
+
+//header
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  padding-top: 2.8rem;
   .header-center {
-    grid-column: 6/span 2;
     color: var(--color-secondary);
-    letter-spacing: -.35rem;
   }
   .header-right {
-    grid-column: 10/span 3;
-    display: flex;
-    justify-content: space-between
+    .header-right-link:hover {
+      color: var(--color-secondary);
+    }
   }
 }
 
@@ -119,8 +130,8 @@ header {
   }
 }
 
-//portfolio section
-.section-portfolio {
+//project section
+.section-projects {
   margin-top: 13rem;
   .accordion {
     margin: 0 auto;
@@ -134,22 +145,22 @@ header {
       .accordion-header {
         display: flex;
         justify-content: space-between;
-        .portfolio-item-title {
+        .accordion-title {
           min-width: 13%;
           display: flex;
           justify-content: space-between;
           align-items: center;
         }
-        .icons {
+        .accordion-icons {
           display: flex;
           justify-content: space-between;
           align-items: center;
           column-gap: 2.5rem;
-          .icon {
+          a {
             min-width: 2rem;
             text-align: center;
           }
-          .icon:hover {
+          a:hover {
             color: var(--color-secondary);
           }
         }
@@ -162,23 +173,27 @@ header {
         transition: max-height 0.3s ease;
         padding: 0 2rem;
 
-        .portfolio-item-description {
-          padding-top: 2rem;
-          margin-bottom: 2rem;
-
+        .accordion-content-description {
+          margin: 2rem 0;
         }
 
-        .portfolio-item-thumbnail {
+        .accordion-content-group {
+          display: flex;
+          column-gap: 10rem;
+        }
+
+        .accordion-content-thumbnail {
           object-fit: cover;
           width: 600px;
           height: 600px;
         }
 
-        .portfolio-item-thumbnail-long {
+        .accordion-content-thumbnail-long {
           object-fit: cover;
           width: 200px;
           height: 500px;
         }
+
       }
 
     }
@@ -199,34 +214,32 @@ header {
   .about-left-side {
     grid-column: 1/span 5;
     order: 0;
-    .about-left-side-section {
-      margin-bottom: 3rem;
+
+    .skills-list {
+      margin-bottom: 5rem;
     }
-    .skills {
-      .skill {
-        display: flex;
-        align-items: center;
-        column-gap: 1rem;
-        margin-bottom: .5rem;
-        --fa-rotate-angle: 45deg;
-      }
-     
-    } 
+
+    .timeline {
+      margin-bottom: 5rem;
+    }
 
     .timeline-item {
       margin-bottom: 1.5rem;
-      .timeline-item-title {
-        display: flex;
-        align-items: center;
-        column-gap: 1rem;
-        --fa-rotate-angle: 45deg;
-      };
       p {
         margin-top: .5rem;
         margin-left: 1.5rem;
       }
      
     } 
+
+    .my-photo {
+      object-fit: cover;
+      width: 300px;
+      height: 300px;
+        img {
+        border-radius: 100%;
+        }
+    }
   }
 
   .about-right-side {
@@ -241,9 +254,7 @@ header {
 
 //contact section
 .section-contact {
-  margin-top: 10rem;
-  .contact {
-    margin-bottom: 13rem;
+  margin-bottom: 10rem;
     .contact-content {
       grid-column: 7/span 5;
       p {
@@ -251,24 +262,14 @@ header {
         font-size: 1.5rem;
         line-height: 2.5rem;
       }
-      .contact-item {
-        display: flex;
-        align-items: center;
-        column-gap: 1rem;
-        margin-bottom: 1rem;
-        i {
-        --fa-rotate-angle: 45deg;
-        }
-      }
 
-      .contact-item:hover {
+      .list-item:hover {
         i {
         --fa-rotate-angle: 90deg;
         }
 
       }
     }
-  }
 }
 
 @import "./_media"
