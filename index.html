@@ -10,9 +10,7 @@
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,425 +18,553 @@
 
 <body class="main-content">
 
-  <header class="section sec1 header active" id="home">
-    <div class="header-content">
+  <header class="header container">
+    <div class="header-left">©2024</div>
 
-      <div class="left-header">
-        <div class="header-shape"></div>
-        <div class="image">
-          <img src="/images/my-photo.JPG" alt="a photo of Hector">
-        </div>
+    <div class="header-center"> HN </div>
 
-      </div>
-
-      <div class="right-header">
-        <h1 class="name">
-          <span>Welcome</span>!
-        </h1>
-        <p>
-          My name is <span style="color: #fa5f1a">Hector Nuno</span>, I'm a software engineer based in California with a
-          background in retail and healthcare. <br /> Although I'm from California, the only surfing I know how to do is
-          surfing the internet. <br /> Surfs up dude! 🏄‍♂️
-        </p>
-
-        <div class="btn-container">
-          <a href="https://drive.google.com/file/d/1mQRzEyrPmmgu5-cmFzChRflRIht7O4jf/view?usp=sharing" target="_blank"
-            class="main-btn">
-            <span class="btn-text">Download Resume</span>
-            <span class="btn-icon"> <i class="fa-solid fa-download"></i></i> </span>
-          </a>
-        </div>
-
-      </div>
+    <div class="header-right">
+      <a href="#projects" class="header-right-link">(PRJ)</a>
+      <a href="#about" class="header-right-link">(ABT)</a>
+      <a href="#contact" class="header-right-link">(MSG)</a>
     </div>
   </header>
 
   <main>
-    <section class="section sec2 about" id="about">
-      <div class="main-title">
-        <h2> About <span>me</span> <span class="bg-text">my stats</span></h2>
-      </div>
+    <div class="hero">
+      <img class="hero-image" src="/images/Hero-Image.svg" alt="hero image">
 
-      <div class="about-container">
-        <div class="left-about">
-          <h4>Info about me</h4>
-
-          <p>
-            In my previous jobs, I've always enjoyed being the go to person for anything technical. From how to look up
-            a
-            product in an inventory system, to figuring out how to organize a list of patients by their dietary
-            restrictions. I liked teaching others how to complete these technical tasks, and I loved seeing the people
-            who I taught go on to teach others. I wanted to find a career where I could stay in this loop of learning
-            and teaching. That’s when I learned that coding was just what I was looking for.
-          </p>
-
-          <p>
-            I enrolled at Actualize Coding Bootcamp where I got a Certificate in Full Stack Web Development. I learned a
-            lot about the fundamentals of coding and after my cohort finished I continued to learn more cool stuff. You
-            can check out some of the technologies I’ve learned below.
-          </p>
-
-          <p>
-            Other than coding, I have a passion for art in all of its forms. From traditional art and paintings to
-            concept and digital art, I love it all. I also like going to art museums, I've visited the LACMA, The Broad,
-            and The Getty. Some of my dream museums to visit are The Guggenheim and The Louvre.
-          </p>
-          <div class="btn-container">
-            <a href="https://drive.google.com/file/d/1mQRzEyrPmmgu5-cmFzChRflRIht7O4jf/view?usp=sharing" target="_blank"
-              class="main-btn">
-              <span class="btn-text">Download Resume</span>
-              <span class="btn-icon"> <i class="fa-solid fa-download"></i></i> </span>
-            </a>
-          </div>
+      <div class="container main-grid">
+        <div class="hero-desc">Hi, my name is Hector Nuno. I'm a software engineer based in California with a background
+          in
+          retail and healthcare.
         </div>
       </div>
 
-      <div class="about-stats">
-        <h4 class="stat-title">My Skills</h4>
-        <div class="progress-bars">
-          <div class="progress-bar">
-            <p class="progress-title">HTML5</p>
-            <!-- <div class="progress-container">
-              <p class="progress-text">50%</p>
-              <div class="progress">
-                <span class="html"></span>
-              </div>
-            </div> -->
-          </div>
-          <div class="progress-bar">
-            <p class="progress-title">JavaScript</p>
-            <!-- <div class="progress-container">
-              <p class="progress-text">70%</p>
-              <div class="progress">
-                <span class="javascript"></span>
-              </div>
-            </div> -->
-          </div>
-          <div class="progress-bar">
-            <p class="progress-title">React.js</p>
-            <!-- <div class="progress-container">
-              <p class="progress-text">60%</p>
-              <div class="progress">
-                <span class="react"></span>
-              </div>
-            </div> -->
-          </div>
-          <div class="progress-bar">
-            <p class="progress-title">Vue.js</p>
-            <!-- <div class="progress-container">
-              <p class="progress-text">40%</p>
-              <div class="progress">
-                <span class="html"></span>
-              </div>
-            </div> -->
-          </div>
-          <div class="progress-bar">
-            <p class="progress-title">Ruby</p>
-            <!-- <div class="progress-container">
-              <p class="progress-text">55%</p>
-              <div class="progress">
-                <span class="ruby"></span>
-              </div>
-            </div> -->
-          </div>
-          <div class="progress-bar">
-            <p class="progress-title">Ruby On Rails</p>
-            <!-- <div class="progress-container">
-              <p class="progress-text">50%</p>
-              <div class="progress">
-                <span class="RoR"></span>
-              </div>
-            </div> -->
-          </div>
-          <div class="progress-bar">
-            <p class="progress-title">React Native</p>
-            <!-- <div class="progress-container">
-              <p class="progress-text">50%</p>
-              <div class="progress">
-                <span class="RoR"></span>
-              </div>
-            </div> -->
-          </div>
-          <div class="progress-bar">
-            <p class="progress-title">Bootstrap</p>
-            <!-- <div class="progress-container">
-              <p class="progress-text">50%</p>
-              <div class="progress">
-                <span class="RoR"></span>
-              </div>
-            </div> -->
-          </div>
-        </div>
-      </div>
+    </div>
 
-      <h4 class="stat-title">My Timeline</h4>
-      <div class="timeline">
+    <div class="container">
+      <section class="section-projects" id="projects">
 
-        <div class="timeline-item">
-          <div class="timeline-icon">
-            <i class="fa-solid fa-shirt"></i>
-          </div>
-          <p class="timeline-duration">Sep 2022 - Present</p>
-          <h5> Stock Associate <span> - Levi Strauss & Co.</span></h5>
-          <p>
-            Use company software to maintain accurate inventory between the sales floor, storeroom, and offsite
-            storage. Process up to 200 boxes of daily shipment, transferring merchandise to storage or the sales floor.
-            Maintain inventory on the sales floor, contributing to the achievement of hourly sales goals.
-          </p>
+        <div class="section-title">
+          <p>Projects</p>
+          <i class="fa-solid fa-sm fa-arrow-turn-down"></i>
         </div>
 
-        <div class="timeline-item">
-          <div class="timeline-icon">
-            <i class="fa-solid fa-mobile-screen-button"></i>
-          </div>
-          <p class="timeline-duration"> Jun 2023 - Sep 2023</p>
-          <h5> Frontend Developer Intern <span> - Click Analytics LLC</span></h5>
-          <p>
-            Collaborate with a team of 8 developers to design and develop FavAnswer - a mobile app built with a React
-            Native front-end and a Ruby back-end. Refactor existing JavaScript code to maintain syntax across
-            components. Drive style consistency by making contributions to the style template based on the client’s
-            vision.
-          </p>
-        </div>
+        <div class="accordion">
+          <div class="accordion-option">
 
-        <div class="timeline-item">
-          <div class="timeline-icon">
-            <i class="fa-solid fa-person-cane"></i>
-          </div>
-          <p class="timeline-duration">Dec 2020 - Feb 2022</p>
-          <h5> Activity Assistant <span> - Redlands Healthcare Center</span></h5>
-          <p>Increased group events from one day per week to three days per week. Purchased crafting and event materials
-            to restock the activity room and stayed within $150 monthly budget. Tracked residents’ participation in
-            various activities, determining interests in order to create tailored events and
-            craft projects.</p>
-        </div>
+            <div class="accordion-header">
+              <div class="accordion-title">
+                <div>Type Checkr</div>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
 
-        <div class="timeline-item">
-          <div class="timeline-icon">
-            <i class="fa-solid fa-film"></i>
-          </div>
-          <p class="timeline-duration">Mar 2020 - Aug 2021</p>
-          <h5> Busser and Server <span> - AMC Theaters</span></h5>
-          <p>Collaborated with team members to clean each theater within the 15 minute break between screenings.
-            Increased sales by understanding customer preferences and recommending relevant food items. Resolved
-            customer concerns by checking on orders, issuing exchanges or refunds as needed.</p>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-icon">
-            <i class="fa-solid fa-dolly"></i>
-          </div>
-          <p class="timeline-duration">Jun 2018 - Mar 2020</p>
-          <h5> Stock Associate <span> - Michael Kors</span></h5>
-          <p>
-            Mentored new team members in daily functions of the store and how to use the inventory system. Stocked the
-            sales floor continuously as product sold. Updated store displays with new product, ensuring adherence to
-            corporate standards.
-          </p>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="section sec3 portfolio" id="portfolio">
-      <div class="main-title">
-        <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
-      </div>
-      <p class="portfolio-text">Here is some of my work!</p>
-      <div class="portfolio">
-        <div class="portfolios">
-
-          <div class="portfolio-item">
-            <div class="image">
-              <img src="images/capstone-screenshot.png" alt="screenshot of capstone">
-            </div>
-            <div class="hover-item">
-              <h3>Type Checkr</h3>
-              <div class="icons">
+              <div class="accordion-icons">
                 <a class="icon" href="https://github.com/HectorDNuno/pokemon-types-app.git" target="_blank">
-                  <i class="fa-brands fa-github"></i>
+                  <i class="fa-brands fa-lg fa-github"></i>
                 </a>
 
                 <a class="icon" href="https://www.youtube.com/watch?v=AD23Exqwb0Y" target="_blank">
-                  <i class="fa-brands fa-youtube"></i>
+                  <i class="fa-brands fa-lg fa-youtube"></i>
                 </a>
 
-                <a class="icon" href="https://type-checkr.netlify.app/" target="_blank">
-                  <i class="fa-solid fa-laptop"></i>
+                <a class="icon" href="https://type-checkr-react.netlify.app/" target="_blank">
+                  <i class="fa-solid fa-up-right-from-square"></i>
                 </a>
 
               </div>
             </div>
+
+            <div class="accordion-content">
+
+              <p class="accordion-content-description">
+                I wanted to build a quick and easy reference tool to see how many Pokémon there are in a given type. For
+                example, I wanted to know how many Pokémon there are in the electric type, what their names are, and
+                what
+                they look like, without having to scroll through a heap of other information. Other websites do this,
+                but they also have a lot more info that I don't really need.
+              </p>
+
+              <div class="accordion-content-group">
+                <div class="accordion-content-thumbnail">
+                  <img src="/images/typecheckr-react.png" alt="type checkr screenshot ">
+                </div>
+
+                <div>
+                  <div class="section-title">
+                    <p>Tools/Resources</p>
+                    <i class="fa-solid fa-sm fa-arrow-turn-down"></i>
+                  </div>
+
+                  <div>
+                    <div class="list-item">
+                      <i class="fa-solid fa-sm fa-rotate-by fa-arrow-up"></i>
+                      React
+                    </div>
+                    <div class="list-item">
+                      <i class="fa-solid fa-sm fa-rotate-by fa-arrow-up"></i>
+                      JavaScript
+                    </div>
+                    <div class="list-item">
+                      <i class="fa-solid fa-sm fa-rotate-by fa-arrow-up"></i>
+                      Axios
+                    </div>
+                    <div class="list-item">
+                      <i class="fa-solid fa-sm fa-rotate-by fa-arrow-up"></i>
+                      PokéAPI
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
           </div>
 
-          <div class="portfolio-item">
-            <div class="image">
-              <img src="images/nozama_screenshot.png" alt="screenshot of nozama project">
-            </div>
-            <div class="hover-item">
-              <h3>Nozama</h3>
-              <div class="icons">
+          <div class="accordion-option">
+            <div class="accordion-header">
+              <div class="accordion-title">
+                <div>Nozama</div>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+
+              <div class="accordion-icons">
                 <a class="icon" href="https://github.com/HectorDNuno/amazon-clone" target="_blank">
-                  <i class="fa-brands fa-github"></i>
+                  <i class="fa-brands fa-lg fa-github"></i>
                 </a>
+
+                <a class="icon" href="#"></a>
 
                 <a class="icon" href="https://clone-a8546.web.app/" target="_blank">
-                  <i class="fa-solid fa-laptop"></i>
+                  <i class="fa-solid fa-up-right-from-square"></i>
                 </a>
+              </div>
+            </div>
+
+            <div class="accordion-content">
+              <p class="accordion-content-description">
+                This is an e-commerece web app that is a clone of the Amazon website. Not only does it look like Amazon,
+                it also has similar features. In the web app, you can do things like create a log in, add and remove
+                items from the cart, 'purchase' items, and compare different products!
+              </p>
+
+              <div class="accordion-content-group">
+                <div class="accordion-content-thumbnail">
+                  <img src="/images/nozama_screenshot.png" alt="nozama screenshot">
+                </div>
+
+
+
+                <div>
+
+                  <div class="section-title">
+                    <p>Tools/Resources</p>
+                    <i class="fa-solid fa-sm fa-arrow-turn-down"></i>
+                  </div>
+
+                  <div>
+                    <div class="list-item">
+                      <i class="fa-solid fa-sm fa-rotate-by fa-arrow-up"></i>
+                      React
+                    </div>
+                    <div class="list-item">
+                      <i class="fa-solid fa-sm fa-rotate-by fa-arrow-up"></i>
+                      JavaScript
+                    </div>
+                    <div class="list-item">
+                      <i class="fa-solid fa-sm fa-rotate-by fa-arrow-up"></i>
+                      Axios
+                    </div>
+                    <div class="list-item">
+                      <i class="fa-solid fa-sm fa-rotate-by fa-arrow-up"></i>
+                      Material UI
+                    </div>
+                    <div class="list-item">
+                      <i class="fa-solid fa-sm fa-rotate-by fa-arrow-up"></i>
+                      Firebase
+                    </div>
+                    <div class="list-item">
+                      <i class="fa-solid fa-sm fa-rotate-by fa-arrow-up"></i>
+                      Moment.js
+                    </div>
+                  </div>
+
+
+                </div>
 
               </div>
+
             </div>
           </div>
 
-          <div class="portfolio-item">
-            <div class="image">
-              <img src="images/weather-app-screenshot.png" alt="screenshot of what weather project">
-            </div>
-            <div class="hover-item">
-              <h3>What Weather</h3>
-              <div class="icons">
+          <div class="accordion-option">
+
+            <div class="accordion-header">
+              <div class="accordion-title">
+                <div>What Weather</div>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+
+              <div class="accordion-icons">
                 <a class="icon" href="https://github.com/HectorDNuno/weather-app" target="_blank">
-                  <i class="fa-brands fa-github"></i>
+                  <i class="fa-brands fa-lg fa-github"></i>
                 </a>
 
                 <a class="icon" href="https://www.youtube.com/watch?v=bLO1_F6Rggg" target="_blank">
-                  <i class="fa-brands fa-youtube"></i>
+                  <i class="fa-brands fa-lg fa-youtube"></i>
                 </a>
+
+                <a class="icon" href="#"></a>
 
               </div>
             </div>
-          </div>
 
-          <div class="portfolio-item">
-            <div class="image">
-              <img src="images/typecheckr-react.png" alt="screenshot of type-checkr react version">
-            </div>
-            <div class="hover-item">
-              <h3>Type Checkr - React</h3>
-              <div class="icons">
-                <a class="icon" href="https://github.com/HectorDNuno/type-checker.git" target="_blank">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-                <a class="icon" href="https://type-checkr-react.netlify.app/" target="_blank">
-                  <i class="fa-solid fa-laptop"></i>
-                </a>
-              </div>
-            </div>
-          </div>
+            <div class="accordion-content">
+              <p class="accordion-content-description">
+                The purpose of this web app is pretty self explanitory. I built this app using React.js,
+                react-accessible-accordion, and react-select-async-paginate. I get my data with a combination of two
+                APIs: OpenWeather and GeoDB Cities.
+              </p>
 
-          <div class="portfolio-item">
-            <div class="image">
-              <img src="images/calendar-screenshot.png" alt="screenshot of calendar app">
-            </div>
-            <div class="hover-item">
-              <h3>Calendar App</h3>
-              <div class="icons">
-                <a class="icon" href="https://github.com/HectorDNuno/calendar.git" target="_blank">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="portfolio-item">
-            <div class="image">
-              <img src="images/faveanswer-screenshot.png" alt="screenshot of calendar app">
-            </div>
-            <div class="hover-item">
-              <h3>FavAnswer App</h3>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="section sec4 contact" id="contact">
-      <div class="contact-container">
-        <div class="main-title">
-          <h2>Contact <span>Me</span></h2>
-        </div>
-        <div class="contact-content-container">
-          <div class="left-contact">
-            <h4 class="left-contact-title">Contact me here</h4>
-            <div class="contact-info">
-              <div class="contact-item">
-                <div class="icon">
-                  <i class="fa-solid fa-envelope-open"></i>
-                  Email
+              <div class="accordion-content-group">
+                <div class="accordion-content-thumbnail">
+                  <img src="/images/weather-app-screenshot.png" alt="what weather screenshot">
                 </div>
-                <p>
-                  hectornuno1994@gmail.com
-                </p>
-              </div>
 
-              <div class="contact-item">
-                <div class="icon">
-                  <i class="fa-solid fa-location-dot"></i>
-                  Location
-                </div>
-                <p>
-                  San Berardino, California
-                </p>
-              </div>
-
-
-              <div class="contact-item">
-                <div class="icon">
-                  <i class="fa-solid fa-user-graduate"></i>
-                  Education
-                </div>
                 <div>
+                  <div class="section-title">
+                    <p>Tools/Resources</p>
+                    <i class="fa-solid fa-sm fa-arrow-turn-down"></i>
+                  </div>
 
-                  <p>
-                    Actualize Coding Bootcamp
-                  </p>
-                  <p>CSU San Bernardino</p>
+                  <div>
+                    <div class="list-item">
+                      <i class="fa-solid fa-sm fa-rotate-by fa-arrow-up"></i>
+                      React
+                    </div>
+                    <div class="list-item">
+                      <i class="fa-solid fa-sm fa-rotate-by fa-arrow-up"></i>
+                      JavaScript
+                    </div>
+                    <div class="list-item">
+                      <i class="fa-solid fa-sm fa-rotate-by fa-arrow-up"></i>
+                      Axios
+                    </div>
+                    <div class="list-item">
+                      <i class="fa-solid fa-sm fa-rotate-by fa-arrow-up"></i>
+                      GeoDB Cities API
+                    </div>
+                    <div class="list-item">
+                      <i class="fa-solid fa-sm fa-rotate-by fa-arrow-up"></i>
+                      OpenWeather API
+                    </div>
+                  </div>
                 </div>
+
               </div>
             </div>
 
-            <div class="contact-icons">
-              <div class="contact-icon">
-                <a href="https://github.com/HectorDNuno" target="_blank">
-                  <i class="fa-brands fa-github"></i>
+          </div>
+
+          <div class="accordion-option">
+            <div class="accordion-header">
+              <div class="accordion-title">
+                <div>Calendar App</div>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+
+              <div class="accordion-icons">
+                <a class="icon" href="https://github.com/HectorDNuno/calendar.git" target="_blank">
+                  <i class="fa-brands fa-lg fa-github"></i>
                 </a>
 
-                <a href="https://www.linkedin.com/in/hectornuno" target="_blank">
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
+                <a class="icon" href="#"></a>
+                <a class="icon" href="#"></a>
+
+              </div>
+            </div>
+
+            <div class="accordion-content">
+              <p class="accordion-content-description">
+                As the name implies, this is a calendar app. I made this project using only Vue. I found the days of the
+                month and the week with JavaScript so that I wouldn't need to rely on a third-party source for that
+                information.
+              </p>
+
+              <div class="accordion-content-group">
+                <div class="accordion-content-thumbnail">
+                  <img src="/images/calendar-screenshot.png" alt="calendar app screenshot">
+                </div>
+
+                <div>
+                  <div class="section-title">
+                    <p>Tools/Resources</p>
+                    <i class="fa-solid fa-sm fa-arrow-turn-down"></i>
+                  </div>
+
+                  <div>
+                    <div class="list-item">
+                      <i class="fa-solid fa-sm fa-rotate-by fa-arrow-up"></i>
+                      Vue
+                    </div>
+                    <div class="list-item">
+                      <i class="fa-solid fa-sm fa-rotate-by fa-arrow-up"></i>
+                      JavaScript
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
+
+          <div class="accordion-option">
+
+            <div class="accordion-header">
+              <div class="accordion-title">
+                <div>FavAnswer App</div>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+
+              <div class="accordion-icons">
+                <a class="icon" href="#"></a>
+                <a class="icon" href="#"></a>
+                <a class="icon" href="#"></a>
+              </div>
+            </div>
+
+            <div class="accordion-content">
+              <p class="accordion-content-description">
+                This project was part of an internship that I participated in. I was mainly in charge of the front end
+                side of things, along with two other people. The biggest contribution I made was the redesign of the
+                intro section of the app. You can see my redesigns in the following images.
+              </p>
+
+              <div class="accordion-content-group">
+
+                <div class="flex">
+                  <div class="accordion-content-thumbnail-long">
+                    <img src="/images/faveanswer-screenshot.png" alt="FavAnswer app screenshot">
+                  </div>
+
+                  <div class="accordion-content-thumbnail-long">
+                    <img src="/images/favanswer-screenshot-3.png" alt="FavAnswer app screenshot">
+                  </div>
+
+                  <div class="accordion-content-thumbnail-long">
+                    <img src="/images/favanswer-screenshot-2.png" alt="FavAnswer app screenshot">
+                  </div>
+                </div>
+
+                <div>
+                  <div class="section-title">
+                    <p>Tools/Resources</p>
+                    <i class="fa-solid fa-sm fa-arrow-turn-down"></i>
+                  </div>
+
+                  <div>
+                    <div class="list-item">
+                      <i class="fa-solid fa-sm fa-rotate-by fa-arrow-up"></i>
+                      React Native
+                    </div>
+                    <div class="list-item">
+                      <i class="fa-solid fa-sm fa-rotate-by fa-arrow-up"></i>
+                      JavaScript
+                    </div>
+                    <div class="list-item">
+                      <i class="fa-solid fa-sm fa-rotate-by fa-arrow-up"></i>
+                      Ruby
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+      </section>
+
+      <section class="section-about " id="about">
+
+        <div class="main-grid">
+          <div class="about-left-side">
+            <div class="section-title">
+              <p>Skills</p>
+              <i class="fa-solid fa-sm fa-arrow-turn-down"></i>
+            </div>
+
+            <div class="skills-list">
+              <div class="list-item">
+                <i class="fa-solid fa-xs fa-rotate-by fa-arrow-up"></i>
+                <p>HTML</p>
+              </div>
+              <div class="list-item">
+                <i class="fa-solid fa-xs fa-rotate-by fa-arrow-up"></i>
+                <p>JAVASCRIPT</p>
+              </div>
+              <div class="list-item">
+                <i class="fa-solid fa-xs fa-rotate-by fa-arrow-up"></i>
+                <p>REACT.JS</p>
+              </div>
+              <div class="list-item">
+                <i class="fa-solid fa-xs fa-rotate-by fa-arrow-up"></i>
+                <p>VUE.JS</p>
+              </div>
+              <div class="list-item">
+                <i class="fa-solid fa-xs fa-rotate-by fa-arrow-up"></i>
+                <p>RUBY</p>
+              </div>
+              <div class="list-item">
+                <i class="fa-solid fa-xs fa-rotate-by fa-arrow-up"></i>
+                <p>RUBY ON RAILS</p>
+              </div>
+              <div class="list-item">
+                <i class="fa-solid fa-xs fa-rotate-by fa-arrow-up"></i>
+                <p>REACT NATIVE</p>
+              </div>
+              <div class="list-item">
+                <i class="fa-solid fa-xs fa-rotate-by fa-arrow-up"></i>
+                <p>BOOTSTRAP</p>
+              </div>
+            </div>
+
+            <div class="section-title">
+              <p>Timeline</p>
+              <i class="fa-solid fa-sm fa-arrow-turn-down"></i>
+            </div>
+
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="list-item">
+                  <i class="fa-solid fa-xs fa-rotate-by fa-arrow-up"></i>
+                  <div>Stock Associate <span class="secondary-color">- Levi Strauss & Co.</span></div>
+                </div>
+                <p class="secondary-color">Sep 2022 - Present</p>
+                <p>Use company software to maintain accurate inventory between the sales floor, storeroom, and offsite
+                  storage.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="list-item">
+                  <i class="fa-solid fa-xs fa-rotate-by fa-arrow-up"></i>
+                  <div>FrontEnd Developer Intern <span class="secondary-color">- Click Analytics LLC </span></div>
+                </div>
+                <p class="secondary-color">Jun 2023 - Sep 2023</p>
+                <p>Collaborate with a team of 8 developers to design and develop FavAnswer - a mobile app built with a
+                  React Native front-end and a Ruby back-end.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="list-item">
+                  <i class="fa-solid fa-xs fa-rotate-by fa-arrow-up"></i>
+                  <div>Full-Stack Web Development <span class="secondary-color">- Actualize Coding Bootcamp</span>
+                  </div>
+
+                </div>
+                <p class="secondary-color">Feb 2022 - May 2022</p>
+                <p>A four-month full-stack web development bootcamp. Core technologies included Ruby, Rails,
+                  JavaScript, and Vue.js.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="list-item">
+                  <i class="fa-solid fa-xs fa-rotate-by fa-arrow-up"></i>
+                  <div>Activity Assitant <span class="secondary-color">- Redlands Healhtcare Center</span></div>
+
+                </div>
+                <p class="secondary-color">Dec 2020 - Feb 2022</p>
+                <p>Tracked residents’ participation in various activities, determining interests in order to create
+                  tailored events and craft projects.
+                </p>
+              </div>
+            </div>
+
+            <div class="section-title">
+              <p>Yours truly</p>
+              <i class="fa-solid fa-sm fa-arrow-turn-down"></i>
+            </div>
+
+            <div class="my-photo">
+              <img src="/images/my-photo-square.JPG" alt="a photo of Hector Nuno">
+            </div>
+
+
+
+          </div>
+
+          <div class="about-right-side">
+            <div class="section-title">
+              <p>About</p>
+              <i class="fa-solid fa-sm fa-arrow-turn-down"></i>
+            </div>
+
+            <div class="about">
+              <p>
+                I wanted to find a career where there was always something new to learn and that's what led me to
+                coding.
+              </p>
+
+              <p>
+                I enrolled at Actualize Coding Bootcamp where I learned Full Stack Web Development. I
+                learned
+                a
+                lot about the fundamentals of coding and after my cohort finished I continued to learn more cool stuff.
+              </p>
+
+              <p>
+                Other than coding, I have a passion for art in all of its forms. From traditional art and paintings to
+                concept and digital art, I love it all.
+              </p>
+
+              <p>If I'm not sitting at a screen coding, then I'm sitting at a screen playing video games</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section class="section-contact" id="contact">
+        <div class="main-grid">
+          <div class="contact-content">
+            <div class="section-title">
+              <div>Get in touch</div>
+              <i class="fa-solid fa-sm fa-arrow-turn-down"></i>
+            </div>
+
+            <p>Feel free to DM me with any of the following links. You'll also find my resume in there!</p>
+
+            <div class="list-item">
+              <i class="fa-solid fa-sm fa-rotate-by fa-arrow-up"></i>
+              <a href="mailto:hectornuno1994@gmail.com">(Email)</a>
+            </div>
+
+            <div class="list-item">
+              <i class="fa-solid fa-sm fa-rotate-by fa-arrow-up"></i>
+              <a href="https://www.linkedin.com/in/hectornuno" target="_blank">(LinkedIn)</a>
+            </div>
+
+            <div class="list-item">
+              <i class="fa-solid fa-sm fa-rotate-by fa-arrow-up"></i>
+              <a href="https://github.com/HectorDNuno" target="_blank">(GitHub)</a>
+
+            </div>
+            <div class="list-item">
+              <i class="fa-solid fa-sm fa-rotate-by fa-arrow-up"></i>
+              <a href="https://drive.google.com/file/d/1mQRzEyrPmmgu5-cmFzChRflRIht7O4jf/view?usp=sharing"
+                target="_blank">(Resume)</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
   </main>
-
-  <div class="controls">
-
-    <div class="control control-1 active-btn" data-id="home">
-      <i class="fa-solid fa-house-chimney"></i>
-    </div>
-
-    <div class="control control-2" data-id="about">
-      <i class="fa-solid fa-user"></i>
-    </div>
-
-    <div class="control control-3" data-id="portfolio">
-      <i class="fa-regular fa-folder-open"></i>
-    </div>
-
-
-    <div class="control control-4" data-id="contact">
-      <i class="fa-solid fa-envelope"></i>
-    </div>
-
-  </div>
-
-  <div class="theme-btn">
-    <i class="fa-solid fa-circle-half-stroke"></i>
-  </div>
 
   <script src="app.js"></script>
 

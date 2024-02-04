@@ -1,189 +1,217 @@
-@media screen and (max-width: 600px) {
-  .about-container {
-    grid-template-columns: 1fr;
-    .right-about {
-      grid-template-columns: 1fr;
-      padding-top: 2.5rem;
-    }
-    .left-about {
-      padding-right: 0;
-      p {
-        padding-left: 0;
-      }
-    }
+@media screen and (max-width: 400px) {
+
+  .container {
+    padding: 0 1.5rem;
   }
 
-  .timeline {
-    grid-template-columns: 1fr;
-    padding-bottom: 6rem;
-  }
+  .header {
+    font-size: 1rem;
 
-  .portfolios {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .contact-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 0;
-    text-align: center;
-  }
-
-  .left-contact-title {
-    text-align: center;
-  }
-
-  .portfolio-text {
-    margin-top: 2.5rem;
-  }
-
-  .main-title {
-    h2 {
-      font-size: 2rem;
-      span {
-        font-size: 2rem;
-      }
-      .bg-text {
-        font-size: 3.5rem;
-      }
-    }
-  }
-
-  .section {
-    padding: 2rem 2.5rem;
-  }
-}
-
-@media screen and (max-width: 1432px) {
-  header {
-    padding: 0 !important;
-  }
-
-  .contact-content-container {
-    flex-direction: column;
-    .right-contact {
-      margin-left: 0;
-      margin-top: 2.5rem;
-    }
-  }
-
-  .contact-content-container .right-contact .input-control-2 {
-    flex-direction: column;
-  }
-
-  .contact-content-container .right-contact .input-control-2 :last-child {
-    margin-left: 0;
-    margin-top: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 1070px) {
-  .about-container {
-    grid-template-columns: 1fr;
-    .right-about {
-      padding-top: 2.5rem;
-    }
-  }
-
-  .main-title {
-    h2 {
-      font-size: 4rem;
-      span {
-        font-size: 4rem;
-      }
-      .bg-text {
-        font-size: 4.5rem;
-      }
-    }
-  }
-
-  .portfolios {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media screen and (max-width: 970px) {
-  .section {
-    padding: 7rem 6rem;
-  }
-
-  header {
-    padding: 0;
-  }
-  header .right-header {
-    padding: 0 !important;
-  }
-
-  .header-content {
-    grid-template-columns: 1fr;
-    padding-bottom: 6rem;
-  }
-
-  .left-header {
-    .header-shape {
+    .header-left {
       display: none;
     }
   }
 
-  .right-header {
-    grid-row: 1;
-    width: 90%;
-    margin: 0 auto;
-    .name {
-      font-size: 2.4rem !important;
-    }
-  }
+  .section-projects {
+    margin-top: 9rem;
 
-  .header-content .left-header .image {
-    margin: 0 auto;
-    width: 90%;
-  }
+    .accordion {
+      .accordion-option {
+        .accordion-header {
 
-  .theme-btn {
-    width: 50px;
-    height: 50px;
-  }
+          .accordion-icons {
+            column-gap: 1rem;
 
-  .controls {
-    top: auto;
-    bottom: 0;
-    flex-direction: row;
-    justify-content: center;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    .control {
-      margin: .6rem 1rem ;
-    }
-  }
-}
+            a {
+              min-width: 1.5rem;
+            }
+          }
+        }
 
-@media screen and (max-width: 700px) {
-  .section {
-    padding: 7rem 3rem;
-  }
-
-  .about-stats {
-    .progress-bars {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  .main-title {
-    h2 {
-      font-size: 3rem;
-      span {
-        font-size: 3rem;
+        .accordion-content-thumbnail-long {
+          width: 200px;
+          height: 200px;
+        }
       }
-      .bg-text {
-        font-size: 4rem;
+    }
+  }
+
+  .section-about {
+    margin-top: 10rem;
+
+    .about-right-side {
+      .about p {
+        margin-bottom: 2rem;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .section-contact {
+    .contact-content {
+      p {
+        font-size: 1.2rem;
+        line-height: normal;
       }
     }
   }
 }
 
+@media screen and (max-width: 600px) {
+  .section-projects {
+    .accordion {
+      .accordion-option {
+        .accordion-header {
+          .accordion-title {
+            min-width: 40%;
+          }
+
+          .accordion-icons {
+            column-gap: minmax(.5rem, 2rem);
+
+            a {
+              min-width: 1.5rem;
+            }
+          }
+        }
+
+        .accordion-content {
+          overflow: auto;
+
+          .accordion-content-description {
+            font-size: 1rem;
+          }
+
+          .accordion-content-group {
+            flex-direction: column;
+            column-gap: 1rem;
+          }
+
+          .accordion-content-thumbnail {
+            width: 200px;
+            height: 200px;
+          }
+
+          .accordion-content-thumbnail-long {
+            width: 200px;
+            height: 300px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .main-grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+  }
+
+  .header {
+    padding-top: 2rem;
+    font-size: 1rem;
+  }
+
+  .flex {
+    height: 300px;
+  }
+
+  .hero {
+    .hero-desc {
+      grid-column: 1;
+    }
+  }
+
+  .section-projects {
+    .accordion {
+      .accordion-option {
+        .accordion-header {
+          .accordion-title {
+            width: 30%;
+          }
+        }
+
+        .accordion-content {
+          overflow: auto;
+
+          .accordion-content-group {
+            flex-direction: column;
+            column-gap: 1rem;
+          }
+
+          .accordion-content-thumbnail {
+            width: 200px;
+            height: 200px;
+          }
+
+          .accordion-content-thumbnail-long {
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+    }
+  }
+
+
+  .section-about {
+    .about-left-side {
+      grid-column: 1 / span 2;
+      order: 1;
+    }
+
+    .about-right-side {
+      grid-column: 1 / span 2;
+      order: 0;
+    }
+
+    .my-photo {
+      margin: 0 auto;
+    }
+  }
+
+  .section-contact {
+    margin: 5rem 0;
+
+    .contact-content {
+      grid-column: 1 / span 2;
+    }
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .section-projects {
+    .accordion {
+      .accordion-option {
+
+        .accordion-content-thumbnail-long {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .section-projects {
+    .accordion {
+      .accordion-option {
+        .accordion-header {
+          .accordion-title {
+            width: 25%;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1432px) {}
