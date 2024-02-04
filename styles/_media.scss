@@ -1,20 +1,217 @@
+@media screen and (max-width: 400px) {
+
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .header {
+    font-size: 1rem;
+
+    .header-left {
+      display: none;
+    }
+  }
+
+  .section-projects {
+    margin-top: 9rem;
+
+    .accordion {
+      .accordion-option {
+        .accordion-header {
+
+          .accordion-icons {
+            column-gap: 1rem;
+
+            a {
+              min-width: 1.5rem;
+            }
+          }
+        }
+
+        .accordion-content-thumbnail-long {
+          width: 200px;
+          height: 200px;
+        }
+      }
+    }
+  }
+
+  .section-about {
+    margin-top: 10rem;
+
+    .about-right-side {
+      .about p {
+        margin-bottom: 2rem;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .section-contact {
+    .contact-content {
+      p {
+        font-size: 1.2rem;
+        line-height: normal;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 600px) {
-  
+  .section-projects {
+    .accordion {
+      .accordion-option {
+        .accordion-header {
+          .accordion-title {
+            min-width: 40%;
+          }
+
+          .accordion-icons {
+            column-gap: minmax(.5rem, 2rem);
+
+            a {
+              min-width: 1.5rem;
+            }
+          }
+        }
+
+        .accordion-content {
+          overflow: auto;
+
+          .accordion-content-description {
+            font-size: 1rem;
+          }
+
+          .accordion-content-group {
+            flex-direction: column;
+            column-gap: 1rem;
+          }
+
+          .accordion-content-thumbnail {
+            width: 200px;
+            height: 200px;
+          }
+
+          .accordion-content-thumbnail-long {
+            width: 200px;
+            height: 300px;
+          }
+        }
+      }
+    }
+  }
 }
 
-@media screen and (max-width: 1432px) {
-  
-}
+@media screen and (max-width: 800px) {
 
-@media screen and (max-width: 1070px) {
+  .container {
+    padding: 0 1.5rem;
+  }
 
+  .main-grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+  }
+
+  .header {
+    padding-top: 2rem;
+    font-size: 1rem;
+  }
+
+  .flex {
+    height: 300px;
+  }
+
+  .hero {
+    .hero-desc {
+      grid-column: 1;
+    }
+  }
+
+  .section-projects {
+    .accordion {
+      .accordion-option {
+        .accordion-header {
+          .accordion-title {
+            width: 30%;
+          }
+        }
+
+        .accordion-content {
+          overflow: auto;
+
+          .accordion-content-group {
+            flex-direction: column;
+            column-gap: 1rem;
+          }
+
+          .accordion-content-thumbnail {
+            width: 200px;
+            height: 200px;
+          }
+
+          .accordion-content-thumbnail-long {
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+    }
+  }
+
+
+  .section-about {
+    .about-left-side {
+      grid-column: 1 / span 2;
+      order: 1;
+    }
+
+    .about-right-side {
+      grid-column: 1 / span 2;
+      order: 0;
+    }
+
+    .my-photo {
+      margin: 0 auto;
+    }
+  }
+
+  .section-contact {
+    margin: 5rem 0;
+
+    .contact-content {
+      grid-column: 1 / span 2;
+    }
+  }
 }
 
 @media screen and (max-width: 970px) {
-  
+  .section-projects {
+    .accordion {
+      .accordion-option {
+
+        .accordion-content-thumbnail-long {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+  }
 }
 
-@media screen and (max-width: 700px) {
- 
+@media screen and (max-width: 1070px) {
+  .section-projects {
+    .accordion {
+      .accordion-option {
+        .accordion-header {
+          .accordion-title {
+            width: 25%;
+          }
+        }
+
+      }
+    }
+  }
 }
 
+@media screen and (max-width: 1432px) {}

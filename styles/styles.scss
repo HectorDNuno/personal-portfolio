@@ -5,7 +5,7 @@
   --color-black: #000;
   --color-grey: #eeeeee;
   --br-sm-2: 14px;
-  --box-shadow-1: 0 3px 15px rgba(0,0,0,.3); 
+  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3);
 }
 
 *,
@@ -20,7 +20,7 @@
   font: inherit;
 }
 
-body{
+body {
   background-color: var(--color-primary);
   color: var(--color-white);
   font-size: 1.1rem;
@@ -35,12 +35,20 @@ html {
   scroll-padding-top: 3rem;
 }
 
-img, picture, svg, video {
+img,
+picture,
+svg,
+video {
   display: block;
   max-width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 
@@ -106,9 +114,11 @@ ul {
   align-items: center;
   font-size: 1.3rem;
   padding-top: 2.8rem;
+
   .header-center {
     color: var(--color-secondary);
   }
+
   .header-right {
     .header-right-link:hover {
       color: var(--color-secondary);
@@ -119,11 +129,13 @@ ul {
 //hero section
 .hero {
   overflow: hidden;
+
   .hero-image {
     margin-top: 5rem;
     max-width: none;
     width: 140vw
   }
+
   .hero-desc {
     margin-top: 4.8rem;
     grid-column: 1/span 4;
@@ -133,6 +145,7 @@ ul {
 //project section
 .section-projects {
   margin-top: 13rem;
+
   .accordion {
     margin: 0 auto;
 
@@ -145,21 +158,25 @@ ul {
       .accordion-header {
         display: flex;
         justify-content: space-between;
+
         .accordion-title {
           min-width: 13%;
           display: flex;
           justify-content: space-between;
           align-items: center;
         }
+
         .accordion-icons {
           display: flex;
           justify-content: space-between;
           align-items: center;
           column-gap: 2.5rem;
+
           a {
             min-width: 2rem;
             text-align: center;
           }
+
           a:hover {
             color: var(--color-secondary);
           }
@@ -201,7 +218,7 @@ ul {
     .accordion-option.active .accordion-content {
       max-height: 550px;
     }
-    
+
     .accordion-option.active .fa-angle-down {
       transform: rotate(180deg);
     }
@@ -211,6 +228,7 @@ ul {
 //about section
 .section-about {
   margin-top: 13rem;
+
   .about-left-side {
     grid-column: 1/span 5;
     order: 0;
@@ -225,27 +243,30 @@ ul {
 
     .timeline-item {
       margin-bottom: 1.5rem;
+
       p {
         margin-top: .5rem;
         margin-left: 1.5rem;
       }
-     
-    } 
+
+    }
 
     .my-photo {
       object-fit: cover;
       width: 300px;
       height: 300px;
-        img {
+
+      img {
         border-radius: 100%;
-        }
+      }
     }
   }
 
   .about-right-side {
     grid-column: 7/span 5;
     order: 1;
-    .about p{
+
+    .about p {
       margin-bottom: 4rem;
       font-size: 2rem;
     }
@@ -255,21 +276,23 @@ ul {
 //contact section
 .section-contact {
   margin-bottom: 10rem;
-    .contact-content {
-      grid-column: 7/span 5;
-      p {
-        margin-bottom: 1rem;
-        font-size: 1.5rem;
-        line-height: 2.5rem;
-      }
 
-      .list-item:hover {
-        i {
-        --fa-rotate-angle: 90deg;
-        }
+  .contact-content {
+    grid-column: 7/span 5;
 
-      }
+    p {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
     }
+
+    .list-item:hover {
+      i {
+        --fa-rotate-angle: 90deg;
+      }
+
+    }
+  }
 }
 
 @import "./_media"
